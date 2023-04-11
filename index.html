@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
+    
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style/mainStyle.css">
+    <link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
-    <h1>To Do List</h1>
-    <main>
+    <header id="header">  
+        <i class='bx bx-check-square'></i>  
+        <h1>To Do List</h1>
+    </header>    
+    <main id="main">
         <section id="sec-input-task">
-            <input type="text" name="input-task" placeholder="Task" />
-            <button></button>
+            <div id="input-task-container">
+                <input type="text" name="input-task" placeholder="Task">
+                <button id="create-task"><i class='bx bx-plus' ></i></button>
+            </div>
+                
+            </div>
         </section>
         <section id="sec-list">
             <h3>Your Tasks</h3>
             <div id="list-container">
                 <p class="list-task"></p>
                 <input type="checkbox" name="finished" />
-                <button id="delete"></button>
+                <button id="delete"><i class='bx bxs-trash'></i></button>
             </div>
         </section>
     </main>    
     <footer>
         copyright 2023 Daniel Hernández
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
