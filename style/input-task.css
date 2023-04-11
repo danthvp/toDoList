@@ -1,0 +1,91 @@
+#main {
+    border: solid red;
+    height: calc(100vh - 11vh - 6vh);
+} 
+
+
+#sec-input-task { 
+    border: solid green;
+    display: flex;
+    height: 10%;
+    margin-top: 5%;
+}
+
+#input-task-container {
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-input-task input[name="input-task"] {
+    width: 40%;
+    height: 50%;
+    padding: .5%;
+    display: inherit;
+    align-items: center;
+    border: none;
+    border-radius: 1.2em 0  0 1.2em;
+    background-color:  var(--grey-alpha);
+    color: var(--purple);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#sec-input-task input[name="input-task"]:focus {
+    border: none;
+    outline: none;
+    background: var(--grey-alpha-act);
+}
+
+
+#sec-input-task input:hover {
+    transform: scaleY(1.05);
+}
+
+
+#sec-input-task button {
+    height: 75%;
+    width: 3.5%;
+    border: none;
+    background: var(--grey-alpha);
+    border-left: 1px solid #bebebe;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 1.2em 1.2em 0;
+}
+
+#sec-input-task button:hover {
+    background-color: var(--grey-alpha-act);
+    cursor: pointer;
+    transform: scaleX(1.05);
+}
+
+#sec-input-task button .bx {
+    color: var(--purple);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
