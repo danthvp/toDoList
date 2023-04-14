@@ -8,6 +8,7 @@
     
     <!-- ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="style/mainStyle.css">
@@ -20,20 +21,26 @@
     </header>    
     <main id="main">
         <section id="sec-input-task">
-            <div id="input-task-container">
-                <input type="text" name="input-task" placeholder="Task">
+            <form id="input-task-form" method="dialog" >
+                <input id="input-task" type="text" name="input-task" placeholder="Task">
                 <button id="create-task"><i class='bx bx-plus' ></i></button>
-            </div>
+            </form>
+
+            <article id="show-task-article">
+                <h3>Your Task</h3>
                 
-            </div>
-        </section>
-        <section id="sec-list">
-            <h3>Your Tasks</h3>
-            <div id="list-container">
-                <p class="list-task"></p>
-                <input type="checkbox" name="finished" />
-                <button id="delete"><i class='bx bxs-trash'></i></button>
-            </div>
+                <div id="task-container">
+                    <div id="commands">
+                        <label for="finished" class="check-container">
+                            <input class="checkbox" type="checkbox" name="finished" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <button class="delete"><i class='bx bxs-trash'></i></button>
+                    </div>
+                    <p class="task">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, praesentium minus architecto repudiandae minima delectus blanditiis nobis a illo non exercitationem nihil, doloremque voluptatibus doloribus rerum, vitae quisquam rem nisi!</p>
+                </div>
+            </article>
+
         </section>
     </main>    
     <footer>
