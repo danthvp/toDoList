@@ -1,10 +1,11 @@
 @import url(root.css);
 @import url(input-task.css);
+@import url(show-task.css);
+@import url(commands.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
 html {
     font-family: 'IBM Plex Sans', sans-serif;
-    
 }
 
 body {
@@ -26,6 +27,13 @@ body {
     margin-top: .4%;
     height: max-content;
 }
+
+
+#main {
+    border: solid red;
+    height: 100%;
+    padding: 5% 0;
+} 
 
 
 footer {

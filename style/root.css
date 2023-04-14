@@ -3,8 +3,11 @@
     --orange: #dc8002;
     --purple: #81538c;
     --pink: #e15850;
+    --red: #e0160b;
     --black: #1E1E1E;
     --grey: #D1D1D1;
+    --dark-grey: #5e5e5e;
     --grey-alpha: #d1d1d19c;
-    --grey-alpha-act: #d1d1d1dc;
+    --grey-alpha-act: #e4e4e4ee;
+    --border-grey: #aaaaaa;
 }

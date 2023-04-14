@@ -1,91 +1,88 @@
-#main {
-    border: solid red;
-    height: calc(100vh - 11vh - 6vh);
-} 
-
-
-#sec-input-task { 
-    border: solid green;
-    display: flex;
-    height: 10%;
-    margin-top: 5%;
-}
-
-#input-task-container {
-    width: 100%;
+ #sec-input-task {
+    border: solid var(--black);
+    width: 60%;
     height: 100%;
-    display: inherit;
+    margin: auto;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#sec-input-task input[name="input-task"] {
-    width: 40%;
-    height: 50%;
-    padding: .5%;
+#input-task-form {
+    border-radius: 1em;
+    width: 60%;
     display: inherit;
-    align-items: center;
+    overflow: hidden;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.253);
+    transition: all .5s;
+}
+
+#input-task-form:hover {
+    transform: scaleY(1.1);
+}
+
+
+#input-task {
+    width: 100%;
+    padding: 2.5% 0;
+    padding-left: 3%;
+    background-color: var(--grey-alpha);
     border: none;
-    border-radius: 1.2em 0  0 1.2em;
-    background-color:  var(--grey-alpha);
+    border-radius: 1em 0 0 1em;
     color: var(--purple);
-    font-size: 1.1em;
+    font-size: 1.15em;
     font-weight: 600;
+    transition: all .5s;
+    
 }
 
-#sec-input-task input[name="input-task"]:focus {
-    border: none;
+
+
+
+#input-task:focus {
     outline: none;
-    background: var(--grey-alpha-act);
 }
 
-
-#sec-input-task input:hover {
-    transform: scaleY(1.05);
-}
-
-
-#sec-input-task button {
-    height: 75%;
-    width: 3.5%;
-    border: none;
-    background: var(--grey-alpha);
-    border-left: 1px solid #bebebe;
-    display: inherit;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 1.2em 1.2em 0;
-}
-
-#sec-input-task button:hover {
-    background-color: var(--grey-alpha-act);
-    cursor: pointer;
-    transform: scaleX(1.05);
-}
-
-#sec-input-task button .bx {
-    color: var(--purple);
-    font-size: 1.3em;
+#input-task::placeholder {
     font-weight: bold;
 }
 
 
+#create-task {
+    border: none;
+    border-radius: 0 1em 1em 0;
+    border-left: 1px solid #aaaaaa;
+    width: 10%;
+    background-color: var(--grey-alpha);   
+    transition: all .5s; 
+}
 
 
 
-
- 
-
-
-
-
-
-
-
-
+#create-task i {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--purple);
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
 
+#input-task-form:hover #input-task,
+#input-task-form:hover #create-task {
+    background-color: var(--grey-alpha-act);
+} 
 
+#create-task:hover {
+    cursor: pointer;
+}
+
+#create-task:active i {
+    color: var(--orange);
+}
 
 
 

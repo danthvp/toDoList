@@ -1,0 +1,35 @@
+#show-task-article {
+    border-radius: 1em;
+    background-color: var(--grey-alpha);
+    margin-top: 5%;
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#show-task-article h3 {
+    border-bottom: 1px solid var(--border-grey);
+    margin: 0%;
+    margin-top: .5%;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    color: var(--dark-grey);
+}
+
+
+#task-container {
+    border: solid red;
+    width: 90%;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+
+
+
