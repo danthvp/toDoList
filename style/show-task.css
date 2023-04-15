@@ -1,10 +1,12 @@
 #show-task-article {
+    width: 80%;
     border-radius: 1em;
     background-color: var(--grey-alpha);
     margin-top: 5%;
     display: inherit;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.253);
 }
 
 
@@ -22,12 +24,25 @@
 
 
 #task-container {
-    border: solid red;
-    width: 90%;
+    border: 2px dashed var(--border-grey);
+    background-color: var(--grey-bg);
+    width: 80%;
     height: max-content;
-    margin: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    padding: .5% 0;
+    margin: 2.5% auto;
+}
+
+
+#task-container .task {
+    width: 100%;
+    text-align: justify;
+    padding: 3% 2% 2% 2%;
+    font-size: 1.05em;
+    letter-spacing: 0.05em;
 }
 
 

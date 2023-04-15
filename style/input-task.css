@@ -1,9 +1,8 @@
- #sec-input-task {
-    border: solid var(--black);
+ #sec-input-task { 
     width: 60%;
     height: 100%;
     margin: auto;
-    padding: 5% 0;
+    padding: 5% 0 4% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +11,7 @@
 
 #input-task-form {
     border-radius: 1em;
-    width: 60%;
+    width: 80%;
     display: inherit;
     overflow: hidden;
     box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.253);

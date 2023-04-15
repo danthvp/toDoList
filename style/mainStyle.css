@@ -4,13 +4,24 @@
 @import url(commands.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: 'IBM Plex Sans', sans-serif;
+    
 }
 
 body {
     background: var(--white);
     color: var(--black);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #header {
@@ -30,13 +41,15 @@ body {
 
 
 #main {
-    border: solid red;
-    height: 100%;
-    padding: 5% 0;
+    height: calc(100vh - 10vh - 9vh);
 } 
 
 
 footer {
-    height: 5vh;
-    border: solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    background: var(--black);
+    color: var(--white);
 }
