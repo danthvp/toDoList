@@ -1,87 +1,64 @@
- #sec-input-task { 
-    width: 60%;
+#sec-input-task {
     height: 100%;
-    margin: auto;
-    padding: 5% 0 4% 0;
-    display: flex;
+    display: inherit;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 #input-task-form {
-    border-radius: 1em;
-    width: 80%;
-    display: inherit;
-    overflow: hidden;
-    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.253);
+    display: flex;
+    width: 40%;
+    height: max-content;
+    margin-bottom: 5%;
     transition: all .5s;
+    box-shadow: 1px 2px 8px #646464a4;
+    border-radius: .5em;
 }
 
 #input-task-form:hover {
-    transform: scaleY(1.1);
+    transform: scaleX(1.03);
 }
 
 
 #input-task {
-    width: 100%;
-    padding: 2.5% 0;
-    padding-left: 3%;
-    background-color: var(--grey-alpha);
-    border: none;
-    border-radius: 1em 0 0 1em;
+    width: 93%;
+    height: 100%;
+    padding: 2% 0;
+    padding-left: 2%;
+    font-weight: bold;
+    font-size: 1.2em;
     color: var(--purple);
-    font-size: 1.15em;
-    font-weight: 600;
-    transition: all .5s;
-    
+    border: none;
+    border-radius: .5em 0 0 .5em;
+    background-color: var(--grey-alpha);
 }
-
-
 
 
 #input-task:focus {
     outline: none;
+    background: var(--grey-alpha-act);
+    
 }
 
-#input-task::placeholder {
-    font-weight: bold;
+#input-task:hover {
+    background: var(--grey-alpha-act);
 }
-
 
 #create-task {
+    width: 7%;
     border: none;
-    border-radius: 0 1em 1em 0;
-    border-left: 1px solid #aaaaaa;
-    width: 10%;
-    background-color: var(--grey-alpha);   
-    transition: all .5s; 
-}
-
-
-
-#create-task i {
-    display: flex;
+    /* border-left: 1px solid var(--black); */
+    border-radius: 0 .5em .5em 0;
+    display: inherit;
     justify-content: center;
-    width: 100%;
-    color: var(--purple);
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-
-#input-task-form:hover #input-task,
-#input-task-form:hover #create-task {
-    background-color: var(--grey-alpha-act);
-} 
-
-#create-task:hover {
+    align-items: center;
+    background-color: var(--orange);   
     cursor: pointer;
 }
 
-#create-task:active i {
-    color: var(--orange);
+#create-task .bx {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--black);
 }
-
-
-

@@ -1,7 +1,6 @@
 @import url(root.css);
 @import url(input-task.css);
 @import url(show-task.css);
-@import url(commands.css);
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
 
@@ -9,47 +8,44 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
     font-family: 'IBM Plex Sans', sans-serif;
-    
 }
 
 body {
-    background: var(--white);
-    color: var(--black);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: 100vh;
+    background-color: var(--grey-bg);
 }
 
+
 #header {
-    background: var(--orange);
-    height: 10vh;
+    background-color: var(--orange);
+    height: 10%;
     display: flex;
     align-items: center;
     padding-left: 5%;
-    color: var(--white);
 }
 
 #header .bx {
-    font-size: 1.5em;
-    margin-top: .4%;
-    height: max-content;
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+h1 {
+  color: var(--white);  
 }
 
 
 #main {
-    height: calc(100vh - 10vh - 9vh);
-} 
-
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
+    height: 10%;
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 9vh;
-    background: var(--black);
-    color: var(--white);
+    color: var(--border-grey);
 }
