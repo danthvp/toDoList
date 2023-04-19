@@ -14,8 +14,12 @@
 body {
     height: 100vh;
     background-color: var(--grey-bg);
+    color: var(--black);
 }
 
+li {
+    list-style: none;
+}
 
 #header {
     background-color: var(--orange);

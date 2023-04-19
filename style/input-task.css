@@ -28,10 +28,14 @@
     padding-left: 2%;
     font-weight: bold;
     font-size: 1.2em;
-    color: var(--purple);
+    color: var(--dark-grey);
     border: none;
     border-radius: .5em 0 0 .5em;
     background-color: var(--grey-alpha);
+}
+
+#input-task::placeholder {
+    color: #7a7a7abb;
 }
 
 
@@ -55,6 +59,7 @@
     align-items: center;
     background-color: var(--orange);   
     cursor: pointer;
+    transition: all .5s;
 }
 
 #create-task .bx {
@@ -62,3 +67,5 @@
     font-weight: bold;
     color: var(--black);
 }
+
+

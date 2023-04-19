@@ -1,0 +1,14 @@
+#show-task-container {
+    border: dashed red;
+    width: 40%;
+    height: max-content;
+    border-radius: .5em;
+    display: inherit;
+    flex-direction: column;
+}
+
+#show-task-container h3 {
+    border: solid blue;
+    padding: 1% 0 1% 1%;
+    color: var(--orange);
+}
