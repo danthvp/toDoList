@@ -9,10 +9,15 @@
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
+    height: auto;
+}
+
+html {
+    height: 100vh;
 }
 
 body {
-    height: auto;
+    min-height: 100%;
     background-color: var(--grey-bg);
     color: var(--black);
 }
@@ -25,7 +30,8 @@ li {
     background-color: var(--orange);
     display: flex;
     align-items: center;
-    padding: 1%;
+    padding: 1% 0;
+    height: 10%;
     padding-left: 5%;
 }
 
@@ -40,10 +46,13 @@ h1 {
 
 
 #main {
-    padding: 13.77% 0;
+    height: max-content;
     display: flex;
     flex-direction: column;
+    padding: 9.8% 0;
 }
+
+
 
 footer {
     padding: 2% 0;
@@ -53,3 +62,7 @@ footer {
     align-items: center;
     color: var(--border-grey);
 }
+
+
+
+

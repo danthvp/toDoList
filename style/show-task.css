@@ -1,8 +1,9 @@
 #show-task-container {
     width: 40%;
+    margin: auto;
     height: max-content;
     border-radius: .5em;
-    display: inherit;
+    display: flex;
     flex-direction: column;
     padding: 1%;
 }
@@ -24,6 +25,7 @@
     color: var(--dark-grey);
     font-weight: bold;
     box-shadow: 1px 2px 8px #646464a4;
+    animation: normal ease-in-out .5s appear;
 }
 
 #task-list li button {
@@ -41,4 +43,66 @@
     background-color: var(--grey);
     color: var(--pink);
     
+}
+
+
+#task-list li button:hover {
+    animation: infinite ease-in-out .5s move;
+}
+
+
+
+@keyframes skew {
+   0% {
+    transform: skew(0deg, 0deg);
+   }
+   33.3% {
+    transform: skew(0deg, -5deg);
+   }
+   66.6% {
+    transform: skew(0deg, 5deg);
+   }
+   100% {
+    transform: skew(0deg, 0deg);
+   }
+}
+
+
+@keyframes move {
+    0% {
+        transform: skew(0deg, 0deg);
+       }
+       33.3% {
+        transform: skew(3deg, -3deg);
+       }
+       66.6% {
+        transform: skew(-3deg, 3deg);
+       }
+       100% {
+        transform: skew(0deg, 0deg);
+       }
+}
+
+
+@keyframes appear {
+    from {
+        transform: scale(.5);
+        opacity: .5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
