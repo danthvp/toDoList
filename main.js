@@ -10,12 +10,13 @@ addTaskButton.addEventListener('click', (e)=>{
         let task = document.createTextNode(inputTask.value);
         listElement.appendChild(task);
         listElement.appendChild(addDeleteButton());
+
         list.appendChild(listElement);
         
         inputTask.value = "";
+
     }
 })
-
 
 
 function addDeleteButton() {
@@ -26,7 +27,8 @@ function addDeleteButton() {
     deleteTask.addEventListener('click', (e)=> {
         const item = e.target.parentElement;
         list.removeChild(item);
-    })
+    });
+    
     return deleteTask;
 
 }
