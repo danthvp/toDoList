@@ -32,3 +32,6 @@ function addDeleteButton() {
     return deleteTask;
 
 }
+
+
+window.onload =  alert('This is not the final version. Some functionalities might not work');
